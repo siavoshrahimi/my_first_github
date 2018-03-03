@@ -1,0 +1,48 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    font-size: 93%;
+}
+nav ul li a:visited,
+nav ul li a:link{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: blue;
+
+    display: block;
+}
+header{
+    background: #bed8d7;
+}
+.menu-triger{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    .menu-triger{
+        display:block ;
+
+    }
+    nav.nav-expended{
+        display: block;
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+    }
+   nav ul li {
+        float: none;
+        border-bottom: #0f0f0f;
+    }
+    ul li:last-child{
+        border-bottom: none;
+
+    }
+
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
